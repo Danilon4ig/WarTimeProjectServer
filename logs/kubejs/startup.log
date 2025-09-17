@@ -1,0 +1,19 @@
+[18:09:47] [INIT] KubeJS 2001.6.5-build.16; MC 2001 forge
+[18:09:47] [INIT] Loaded plugins:
+[18:09:47] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[18:09:47] [INIT] - fr.iglee42.createcasing.compat.kubejs.KubeJSCompatPlugin
+[18:09:47] [INIT] - com.wolfieboy09.kjscc.ComputerCraftPlugin
+[18:09:47] [INIT] - pie.ilikepiefoo.kubejsoffline.OfflinePlugin
+[18:09:47] [INIT] - dev.aika.taczjs.forge.TaCZJSPlugin
+[18:09:47] [INIT] - com.tom.createores.kubejs.KubeJSExcavation
+[18:09:47] [INIT] - pie.ilikepiefoo.AdditionsPlugin
+[18:09:47] [INIT] - pie.ilikepiefoo.compat.jei.JEIKubeJSPlugin
+[18:09:47] [INIT] - com.probejs.ProbeJSPlugin
+[18:09:47] [INIT] - com.tacz.guns.compat.kubejs.TimelessKubeJSPlugin
+[18:09:47] [INIT] - com.almostreliable.ponderjs.PonderJSPlugin
+[18:09:47] [INIT] - dev.kostromdan.mods.netjs.NetJSPlugin
+[18:09:47] [INIT] - io.github.techtastic.kubevs.plugin.KubeVSPlugin
+[18:09:48] [INFO] example.js#5: Hello, World! (Loaded startup scripts)
+[18:09:48] [INFO] Loaded script startup_scripts:example.js in 0.143 s
+[18:09:48] [INFO] Loaded script startup_scripts:wandAxe.js in 0.035 s
+[18:09:48] [INFO] Loaded 2/2 KubeJS startup scripts in 1.413 s with 0 errors and 0 warnings

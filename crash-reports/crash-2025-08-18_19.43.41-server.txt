@@ -1,0 +1,154 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 2025-08-18 19:43:41
+Description: Exception in server tick loop
+
+org.valkyrienskies.core.impl.util.assertions.stages.ConstraintFailedException: Constraints failed. Stages since last reset: [PRE_TICK, GET_LAST_TICK_CHANGES, UPDATE_CHUNKS, UPDATE_CHUNKS, UPDATE_CHUNKS, POST_TICK_START, POST_TICK_GENERATED, POST_TICK_FINISH, GET_CURRENT_TICK_CHANGES, CLEAR_FOR_RESET, UPDATE_DIMENSIONS, UPDATE_PLAYERS]
+Required stages matching predicate in the following order: [PRE_TICK, oneOf[UPDATE_DIMENSIONS, UPDATE_BLOCKS, UPDATE_CHUNKS], POST_TICK_START, POST_TICK_GENERATED, POST_TICK_FINISH, CLEAR_FOR_RESET, UPDATE_PLAYERS]
+	at org.valkyrienskies.core.impl.util.assertions.stages.TickStageEnforcerImpl.stage(Unknown Source) ~[valkyrienskies-120-2.3.0-beta.9.jar%23224!/:?] {re:classloading}
+	at org.valkyrienskies.core.impl.game.ships.ShipObjectServerWorld.setPlayers(Unknown Source) ~[valkyrienskies-120-2.3.0-beta.9.jar%23224!/:?] {re:mixin,re:classloading,pl:mixin:APP:cc_vs-common.mixins.json:ShipObjectWorldAccessor,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.handler$zph000$preTick(MinecraftServer.java:4988) ~[server-1.20.1-20230612.114412-srg.jar%23233!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java) ~[server-1.20.1-20230612.114412-srg.jar%23233!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23233!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23233!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:842) ~[?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.12, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 1117786840 bytes (1066 MiB) / 4655677440 bytes (4440 MiB) up to 6442450944 bytes (6144 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 2700 Eight-Core Processor          
+	Identifier: AuthenticAMD Family 23 Model 8 Stepping 2
+	Microarchitecture: Zen+
+	Frequency (GHz): 3.19
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce GTX 1650
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x1f82
+	Graphics card #0 versionInfo: DriverVersion=32.0.15.7652
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 49022.98
+	Virtual memory used (MB): 30630.75
+	Swap memory total (MB): 33206.87
+	Swap memory used (MB): 3640.39
+	JVM Flags: 1 total; -Xmx6G
+	Server Running: true
+	Player Count: 1 / 20; [ServerPlayer['Danilon4ig'/16, l='ServerLevel[World]', x=96.54, y=-51.08, z=181.71]]
+	Data Packs: vanilla, mod:kuma_api, mod:shupapiumvs, mod:geckolib, mod:cccbridge (incompatible), mod:wariumcomputers, mod:ritchiesprojectilelib (incompatible), mod:immersivefixes, mod:mixinextras (incompatible), mod:clientcrafting (incompatible), mod:createdieselgenerators (incompatible), mod:balm, mod:interiors (incompatible), mod:cloth_config (incompatible), mod:embeddium, mod:create_connected, mod:patchouli (incompatible), mod:ctjl (incompatible), mod:worldedit (incompatible), mod:sodiumoptionsmodcompat, mod:architectury (incompatible), mod:kubejsadditions (incompatible), mod:kubejsoffline (incompatible), mod:computercraft, mod:kjscc, mod:cupboard (incompatible), mod:probejs (incompatible), mod:playerrevive, mod:create_tweaked_controllers, mod:rhino (incompatible), mod:copycats (incompatible), mod:embeddium_device_check, mod:jei, mod:kubejs (incompatible), mod:immersiveindustry, mod:netjs (incompatible), mod:pneumaticcraft (incompatible), mod:crafttweaker (incompatible), mod:forge, mod:debugutils (incompatible), mod:craftingtweaks, mod:warium_extras, mod:warium_akimbo, mod:voicechat (incompatible), mod:immersiveengineering (incompatible), mod:nochatreports (incompatible), mod:creativecore, mod:kotlinforforge (incompatible), mod:flywheel, mod:compressedcreativity (incompatible), mod:createoreexcavation (incompatible), mod:create_radar, mod:createbigcannons (incompatible), mod:create, mod:createcasing (incompatible), mod:ponderjs (incompatible), mod:cc_recrafted (incompatible), mod:valkyrienskies (incompatible), mod:createpropulsion, mod:vs_clockwork (incompatible), mod:cc_vs (incompatible), mod:kubevs (incompatible), mod:drivebywire (incompatible), mod:create_interactive (incompatible), mod:crusty_chunks, mod:warium_ponder, mod:simpleradio (incompatible), mod:createaddition (incompatible), mod:lexiconfig (incompatible), mod:createtweaker (incompatible), mod:kill_tool
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@4.11.0
+		javafml@null
+		lowcodefml@null
+	Mod List: 
+		kuma-api-forge-20.1.10+1.20.1.jar                 |KumaAPI                       |kuma_api                      |20.1.10             |DONE      |Manifest: NOSIGNATURE
+		cbcwariumvs-1.0.1.jar                             |CBC: Warium Projectiles with V|shupapiumvs                   |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		Kill-Tool.jar                                     |kill_tool                     |kill_tool                     |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.7.3.jar                   |GeckoLib 4                    |geckolib                      |4.7.3               |DONE      |Manifest: NOSIGNATURE
+		cccbridge-mc1.20.1-v1.7.0-forge.jar               |CC:C Bridge                   |cccbridge                     |1.7.0               |DONE      |Manifest: NOSIGNATURE
+		wariumcomputers-1.0.0.jar                         |Warium computers              |wariumcomputers               |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		ritchiesprojectilelib-2.1.0+mc.1.20.1-forge.jar   |Ritchie's Projectile Library  |ritchiesprojectilelib         |2.1.0               |DONE      |Manifest: NOSIGNATURE
+		immersivefixes-1.0.2.jar                          |ImmersiveFixes                |immersivefixes                |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.4.1.jar                       |MixinExtras                   |mixinextras                   |0.4.1               |DONE      |Manifest: NOSIGNATURE
+		clientcrafting-1.20.1-1.8.jar                     |clientcrafting mod            |clientcrafting                |1.20.1-1.8          |DONE      |Manifest: NOSIGNATURE
+		createdieselgenerators-1.20.1-1.2i.jar            |Create Diesel Generators      |createdieselgenerators        |1.20.1-1.2i         |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.20.1-7.3.34-all.jar                  |Balm                          |balm                          |7.3.34              |DONE      |Manifest: NOSIGNATURE
+		interiors-0.5.6+forge-mc1.20.1-build.104.jar      |Create: Interiors             |interiors                     |0.5.6               |DONE      |Manifest: NOSIGNATURE
+		cloth-config-forge-11.1.106.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.106            |DONE      |Manifest: NOSIGNATURE
+		embeddium-0.3.31+mc1.20.1.jar                     |Embeddium                     |embeddium                     |0.3.31+mc1.20.1     |DONE      |Manifest: NOSIGNATURE
+		create_connected-0.9.4-mc1.20.1-all.jar           |Create: Connected             |create_connected              |0.9.4-mc1.20.1      |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.20.1-84.1-FORGE.jar                   |Patchouli                     |patchouli                     |1.20.1-84.1-FORGE   |DONE      |Manifest: NOSIGNATURE
+		ctjl-1.20.1-1.3.0.jar                             |CraftTweaker Java Library     |ctjl                          |1.20.1-1.3.0        |DONE      |Manifest: NOSIGNATURE
+		worldedit-mod-7.2.15.jar                          |WorldEdit                     |worldedit                     |7.2.15+6463-5ca4dff |DONE      |Manifest: NOSIGNATURE
+		sodiumoptionsmodcompat-forge-1.0.0-1.20.1.jar     |Sodium Options Mod Compat     |sodiumoptionsmodcompat        |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		architectury-9.2.14-forge.jar                     |Architectury                  |architectury                  |9.2.14              |DONE      |Manifest: NOSIGNATURE
+		kubejsadditions-forge-4.3.4.jar                   |KubeJS Addditions (Forge)     |kubejsadditions               |4.3.4               |DONE      |Manifest: NOSIGNATURE
+		kubejsoffline-5.0.7.jar                           |KubeJS Offline (Forge)        |kubejsoffline                 |5.0.7               |DONE      |Manifest: NOSIGNATURE
+		cc-tweaked-1.20.1-forge-1.115.0.jar               |CC: Tweaked                   |computercraft                 |1.115.0             |DONE      |Manifest: NOSIGNATURE
+		kjscc-2002-1.0.2-beta.jar                         |KubeJS + CC: Tweaked          |kjscc                         |2002-1.0.2-beta     |DONE      |Manifest: NOSIGNATURE
+		cupboard-1.20.1-2.7.jar                           |Cupboard utilities            |cupboard                      |1.20.1-2.7          |DONE      |Manifest: NOSIGNATURE
+		probejs-6.0.1-forge.jar                           |ProbeJS                       |probejs                       |6.0.1               |DONE      |Manifest: NOSIGNATURE
+		PlayerRevive_FORGE_v2.0.26_mc1.20.1.jar           |PlayerRevive                  |playerrevive                  |2.0.26              |DONE      |Manifest: NOSIGNATURE
+		create_tweaked_controllers-1.20.1-1.2.4.jar       |Create: Tweaked Controllers   |create_tweaked_controllers    |1.20.1-1.2.4        |DONE      |Manifest: NOSIGNATURE
+		rhino-forge-2001.2.3-build.10.jar                 |Rhino                         |rhino                         |2001.2.3-build.10   |DONE      |Manifest: NOSIGNATURE
+		copycats-2.2.2+mc.1.20.1-forge.jar                |Create: Copycats+             |copycats                      |2.2.2+mc.1.20.1-forg|DONE      |Manifest: NOSIGNATURE
+		rubidium-device-check-1.0.2.1+mc1.20.1-unknown.jar|Embeddium Device Check        |embeddium_device_check        |1.0.2.1+mc1.20.1-unk|DONE      |Manifest: NOSIGNATURE
+		jei-1.20.1-forge-15.20.0.112.jar                  |Just Enough Items             |jei                           |15.20.0.112         |DONE      |Manifest: NOSIGNATURE
+		kubejs-forge-2001.6.5-build.16.jar                |KubeJS                        |kubejs                        |2001.6.5-build.16   |DONE      |Manifest: NOSIGNATURE
+		ImmersiveIndustry-1.20.1-0.2.3.jar                |Immersive Industry            |immersiveindustry             |1.20.1-0.2.3        |DONE      |Manifest: NOSIGNATURE
+		netjs-forge-1.20.1-1.2.0.jar                      |NetJS (Forge)                 |netjs                         |1.20.1-1.2.0        |DONE      |Manifest: NOSIGNATURE
+		pneumaticcraft-repressurized-6.0.20+mc1.20.1.jar  |PneumaticCraft: Repressurized |pneumaticcraft                |6.0.20+mc1.20.1     |DONE      |Manifest: NOSIGNATURE
+		CraftTweaker-forge-1.20.1-14.0.57.jar             |CraftTweaker                  |crafttweaker                  |14.0.57             |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.4.0-universal.jar                 |Forge                         |forge                         |47.4.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		debugutils-1.20.1-1.0.5-forge.jar                 |Debug Utils                   |debugutils                    |1.20.1-1.0.5        |DONE      |Manifest: NOSIGNATURE
+		craftingtweaks-forge-1.20.1-18.2.6.jar            |CraftingTweaks                |craftingtweaks                |18.2.6              |DONE      |Manifest: NOSIGNATURE
+		server-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: NOSIGNATURE
+		warium_extras-1.0.5-forge-1.20.1.jar              |Warium Extras                 |warium_extras                 |1.0.5               |DONE      |Manifest: NOSIGNATURE
+		warium_akimbo-1.0.0-forge-1.20.1.jar              |Warium Akimbo                 |warium_akimbo                 |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		voicechat-forge-1.20.1-2.5.35.jar                 |Simple Voice Chat             |voicechat                     |1.20.1-2.5.35       |DONE      |Manifest: NOSIGNATURE
+		ImmersiveEngineering-1.20.1-10.2.0-183.jar        |Immersive Engineering         |immersiveengineering          |1.20.1-10.2.0-183   |DONE      |Manifest: 44:39:94:cf:1d:8c:be:3c:7f:a9:ee:f4:1e:63:a5:ac:61:f9:c2:87:d5:5b:d9:d6:8c:b5:3e:96:5d:8e:3f:b7
+		NoChatReports-FORGE-1.20.1-v2.2.2.jar             |No Chat Reports               |nochatreports                 |1.20.1-v2.2.2       |DONE      |Manifest: NOSIGNATURE
+		CreativeCore_FORGE_v2.12.32_mc1.20.1.jar          |CreativeCore                  |creativecore                  |2.12.32             |DONE      |Manifest: NOSIGNATURE
+		CreateTweaker-forge-1.20.1-4.0.15.jar             |CreateTweaker                 |createtweaker                 |4.0.15              |DONE      |Manifest: NOSIGNATURE
+		kffmod-4.11.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.11.0              |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.20.1-0.6.11-13.jar               |Flywheel                      |flywheel                      |0.6.11-13           |DONE      |Manifest: NOSIGNATURE
+		compressedcreativity-1.20.1-0.1.8.b.jar           |Compressed Creativity         |compressedcreativity          |1.20.1-0.1.8.b      |DONE      |Manifest: NOSIGNATURE
+		createoreexcavation-1.20-1.5.3.jar                |Create Ore Excavation         |createoreexcavation           |1.5.3               |DONE      |Manifest: NOSIGNATURE
+		lexiconfig-forge-1.4.18-1.jar                     |Lexiconfig                    |lexiconfig                    |1.4.18-1            |DONE      |Manifest: NOSIGNATURE
+		create_radar-0.1.56mc1.20.1.jar                   |Create: Radars                |create_radar                  |0.1                 |DONE      |Manifest: NOSIGNATURE
+		createbigcannons-5.8.2-mc.1.20.1-forge.jar        |Create Big Cannons            |createbigcannons              |5.8.2               |DONE      |Manifest: NOSIGNATURE
+		create-1.20.1-0.5.1.j.jar                         |Create                        |create                        |0.5.1.j             |DONE      |Manifest: NOSIGNATURE
+		CreateCasing-1.20.1-1.6.2-fix3.jar                |Create : Encased              |createcasing                  |1.20.1-1.6.2-fix3   |DONE      |Manifest: NOSIGNATURE
+		ponderjs-1.20.1-1.4.0.jar                         |PonderJS                      |ponderjs                      |1.4.0               |DONE      |Manifest: NOSIGNATURE
+		cc-recrafted-forge-1.20.1.0.0.3.jar               |Computer Craft: Recrafted     |cc_recrafted                  |1.20.1-0.5.1.j-55-0.|DONE      |Manifest: NOSIGNATURE
+		valkyrienskies-120-2.3.0-beta.9.jar               |Valkyrien Skies 2             |valkyrienskies                |2.3.0-beta.9        |DONE      |Manifest: NOSIGNATURE
+		createpropulsion-0.2.1.jar                        |Create: Propulsion            |createpropulsion              |0.2.1               |DONE      |Manifest: NOSIGNATURE
+		clockwork-1.20.1-0.1.16-forge-b3b22e39fe.jar      |Clockwork: Create x Valkyrien |vs_clockwork                  |1.20.1-0.1.16-forge-|DONE      |Manifest: NOSIGNATURE
+		cc_vs-1.20.1-forge-0.2.2.jar                      |CC: VS                        |cc_vs                         |1.20.1-forge-0.2.2  |DONE      |Manifest: NOSIGNATURE
+		kubevs-1.20.1-forge-1.1.0.jar                     |KubeVS                        |kubevs                        |1.20.1-forge-1.1.0  |DONE      |Manifest: NOSIGNATURE
+		drivebywire-1.20.1-0.0.10.jar                     |Drive-By-Wire Mod             |drivebywire                   |0.0.10              |DONE      |Manifest: NOSIGNATURE
+		create_interactive-1.1.1-beta.4_1.20.1-forge.jar  |Create: Interactive           |create_interactive            |1.1.1-beta.4_1.20.1-|DONE      |Manifest: NOSIGNATURE
+		Warium 1.0.6.jar                                  |Warium                        |crusty_chunks                 |1.0.6               |DONE      |Manifest: NOSIGNATURE
+		warium_ponder-1.2.0.jar                           |Warium Ponder                 |warium_ponder                 |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		simpleradio-forge-1.20.1-3.4.6.jar                |Simple Radio                  |simpleradio                   |3.4.6               |DONE      |Manifest: NOSIGNATURE
+		createaddition-1.20.1-1.2.5.jar                   |Create Crafts & Additions     |createaddition                |1.20.1-1.2.5        |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: ea9cc7e0-fec7-418d-a8fc-79d17194497e
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.0

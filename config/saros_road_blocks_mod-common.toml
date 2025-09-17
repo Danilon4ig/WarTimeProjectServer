@@ -1,0 +1,5 @@
+
+[debug]
+	#Enable verbose networking debug logging for brush tool operations
+	debugBrush = false
+

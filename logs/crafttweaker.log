@@ -1,0 +1,93 @@
+[18:09:44.648][INFO][CraftTweaker-EarlyInit]: CraftTweaker is running on a Minecraft 1.20.1 production server modded with platform Forge
+[18:09:44.705][INFO][CraftTweaker-EarlyInit]: Successfully injected RecipeFS file system
+[18:09:44.919][INFO][CraftTweaker-Plugins]: Successfully identified and loaded plugin crafttweaker:builtin
+[18:09:44.923][INFO][CraftTweaker-Plugins]: Successfully identified and loaded plugin crafttweaker:builtin_forge
+[18:09:44.928][INFO][CraftTweaker-Plugins]: Successfully identified and loaded plugin createtweaker:main
+[18:09:44.931][INFO][CraftTweaker-Plugins]: Successfully identified and loaded plugin farmersdelight:crafttweaker_plugin
+[18:09:48.246][INFO][CraftTweaker]: The following mods have explicit CraftTweaker support through the default plugin:
+[18:09:48.250][INFO][CraftTweaker]: - 'crafttweaker' at version '14.0.57'
+[18:09:48.250][INFO][CraftTweaker]: - 'createtweaker' at version '4.0.15'
+[18:09:48.250][INFO][CraftTweaker]: - 'ctjl' at version '1.20.1-1.3.0'
+[18:09:48.250][INFO][CraftTweaker]: - 'farmersdelight' at version '1.20.1-1.2.9'
+[18:09:48.250][INFO][CraftTweaker]: - 'immersiveengineering' at version '1.20.1-10.2.0-183'
+[18:09:48.250][INFO][CraftTweaker]: - 'pneumaticcraft' at version '6.0.20+mc1.20.1'
+[18:09:48.880][WARN][CraftTweaker-ZenCode]: Attempting to register expansion for unknown type 'stdlib.Exception', carrying on anyways
+[18:10:02.180][INFO][CraftTweaker-ZenCode]: Started loading scripts for loader 'initialize'
+[18:10:02.980][INFO][CraftTweaker-ZenCode]: Compiling and executing scripts
+[18:10:03.046][INFO][CraftTweaker-ZenCode]: Successfully initialized modules [crafttweaker, expansions]
+[18:10:03.226][INFO][CraftTweaker-ZenCode]: Execution for loader 'initialize' completed successfully
+[18:10:40.735][INFO][CraftTweaker-ZenCode]: Started loading scripts for loader 'tags'
+[18:10:40.776][INFO][CraftTweaker-ZenCode]: Compiling and executing scripts
+[18:10:40.835][INFO][CraftTweaker-ZenCode]: Successfully initialized modules [crafttweaker, expansions]
+[18:10:40.851][INFO][CraftTweaker-ZenCode]: Execution for loader 'tags' completed successfully
+[18:10:42.715][INFO][CraftTweaker]: crafttweaker.reload.start
+[18:10:42.728][INFO][CraftTweaker-ZenCode]: Started loading scripts for loader 'crafttweaker'
+[18:10:42.754][INFO][CraftTweaker-ZenCode]: Compiling and executing scripts
+[18:10:43.372][INFO][CraftTweaker-ZenCode]: Successfully initialized modules [mods, crafttweaker, expansions]
+[18:10:43.373][INFO][CraftTweaker-ZenCode]: Loading file 'adminTools.zs' with priority 0
+[18:10:43.374][INFO][CraftTweaker-ZenCode]: Loading file 'customPropulsionRecipes.zs' with priority 0
+[18:10:43.374][INFO][CraftTweaker-ZenCode]: Loading file 'recipesRemove.zs' with priority 0
+[18:10:43.412][INFO][CraftTweaker]: Adding "Только для администрации!" to the tooltip for: <item:kill_tool:id_1>
+[18:10:43.415][INFO][CraftTweaker]: Removing all recipes that output <item:kill_tool:id_1>
+[18:10:43.454][INFO][CraftTweaker]: Removed 1 recipes registered in these 1 recipe managers: [<recipetype:minecraft:crafting>: 1]
+[18:10:43.454][INFO][CraftTweaker]: Adding "Только для администрации!" to the tooltip for: <item:kill_tool:id_3>
+[18:10:43.454][INFO][CraftTweaker]: Removing all recipes that output <item:kill_tool:id_3>
+[18:10:43.466][INFO][CraftTweaker]: Removed 1 recipes registered in these 1 recipe managers: [<recipetype:minecraft:crafting>: 1]
+[18:10:43.467][INFO][CraftTweaker]: Adding "Только для администрации!" to the tooltip for: <item:kill_tool:id_4>
+[18:10:43.467][INFO][CraftTweaker]: Removing all recipes that output <item:kill_tool:id_4>
+[18:10:43.482][INFO][CraftTweaker]: Removed 1 recipes registered in these 1 recipe managers: [<recipetype:minecraft:crafting>: 1]
+[18:10:43.482][INFO][CraftTweaker]: Adding "Только для администрации!" to the tooltip for: <item:kill_tool:id_5>
+[18:10:43.482][INFO][CraftTweaker]: Removing all recipes that output <item:kill_tool:id_5>
+[18:10:43.494][INFO][CraftTweaker]: Removed 1 recipes registered in these 1 recipe managers: [<recipetype:minecraft:crafting>: 1]
+[18:10:43.494][INFO][CraftTweaker]: Adding "Только для администрации!" to the tooltip for: <item:kill_tool:id_8>
+[18:10:43.494][INFO][CraftTweaker]: Removing all recipes that output <item:kill_tool:id_8>
+[18:10:43.504][INFO][CraftTweaker]: Removed 1 recipes registered in these 1 recipe managers: [<recipetype:minecraft:crafting>: 1]
+[18:10:43.505][INFO][CraftTweaker]: Removing all recipes that output <item:createpropulsion:physics_assembler>
+[18:10:43.515][INFO][CraftTweaker]: Removed 1 recipes registered in these 1 recipe managers: [<recipetype:minecraft:crafting>: 1]
+[18:10:43.515][INFO][CraftTweaker]: Removing all recipes that output <item:createpropulsion:assembly_gauge>
+[18:10:43.524][INFO][CraftTweaker]: Removed 1 recipes registered in these 1 recipe managers: [<recipetype:minecraft:crafting>: 1]
+[18:10:43.530][INFO][CraftTweaker]: Adding 'minecraft:crafting' recipe, of type: "shaped", with name: 'crafttweaker:physics_assembler' that outputs: '<item:createpropulsion:physics_assembler>'
+[18:10:43.530][INFO][CraftTweaker]: Adding 'minecraft:crafting' recipe, of type: "shaped", with name: 'crafttweaker:assembly_gauge' that outputs: '<item:createpropulsion:assembly_gauge>'
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:createcasing:chorium_ingot>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:createcasing:creative_gearbox>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:createcasing:vertical_creative_gearbox>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:createcasing:creative_encased_chain_drive>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:createcasing:creative_adjustable_chain_gearshift>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:createcasing:creative_depot>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:createcasing:creative_press>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:createcasing:creative_mixer>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:createcasing:creative_casing>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:valkyrien_warium:build_core_placer>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:valkyrien_warium:propeller_rotor>
+[18:10:43.531][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:valkyrien_warium:water_propeller_rotor>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:valkyrien_warium:helicopter_rotor>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:valkyrien_warium:helicopter_blade>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:jump_pad>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:crusty_chunks:fuel_hose>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:propeller>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:heli_rotor>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:boat_propeller>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:control_surface>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:vertical_control_surface>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:control_surface_offset_top>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:control_surface_offset_bottom>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:control_surface_dark_gray>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:vertical_control_surface_dark_gray>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:control_surface_offset_top_dark_gray>
+[18:10:43.532][INFO][CraftTweaker]: Adding "Используйте Create/VS Clockwork" to the tooltip for: <item:valkyrien_warium:control_surface_offset_bottom_dark_gray>
+[18:10:43.536][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:bmp_2", id: "superbwarfare:container"}})
+[18:10:43.536][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:mk_42", id: "superbwarfare:container"}})
+[18:10:43.536][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:mle_1934", id: "superbwarfare:container"}})
+[18:10:43.536][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:bl_132", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:hpj_11", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:annihilator", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:laser_tower", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:speedboat", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:lav_150", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:prism_tank", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:yx_100", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:ah_6", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker]: Adding "Предмет недоступен!" to the tooltip for: <item:superbwarfare:container>.withTag({BlockEntityTag: {EntityType: "superbwarfare:a_10a", id: "superbwarfare:container"}})
+[18:10:43.537][INFO][CraftTweaker-ZenCode]: Execution for loader 'crafttweaker' completed successfully
+[18:10:43.541][INFO][CraftTweaker]: crafttweaker.reload.complete
+[18:10:43.541][INFO][CraftTweaker]: This reload was made possible by DreamThorn and more! Become a patron at https://patreon.com/jaredlll08?s=crtmod

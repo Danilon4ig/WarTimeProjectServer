@@ -1,0 +1,8 @@
+StartupEvents.registry('block', event => {
+    const blocks = event.registry.values(); // Получаем коллекцию всех блоков
+    for (let block of blocks) {
+        const id = block.id;
+        const resistance = block.blastResistance;
+        console.log(`[BlastResistance] ${id}: ${resistance}`);
+    }
+});

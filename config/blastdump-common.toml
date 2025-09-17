@@ -1,0 +1,3 @@
+#Defines an output file name
+outputFilename = "blast_resistance_dump.csv"
+

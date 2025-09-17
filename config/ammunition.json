@@ -1,0 +1,408 @@
+{
+  "ammo50ae": {
+    "FMJ": {
+      "dmg": 25.0,
+      "ap": 15.0,
+      "v": 470.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 35.0,
+      "ap": 2.0,
+      "v": 470.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 20.0,
+      "ap": 25.0,
+      "v": 470.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo12gauge": {
+    "BU": {
+      "dmg": 4.5,
+      "ap": 2.0,
+      "v": 400.0,
+      "qty": 9,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "BI": {
+      "dmg": 1.2,
+      "ap": 0.5,
+      "v": 400.0,
+      "qty": 24,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "SL": {
+      "dmg": 25.0,
+      "ap": 15.0,
+      "v": 500.0,
+      "qty": 1,
+      "dis": 0.1,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo545": {
+    "FMJ": {
+      "dmg": 18.0,
+      "ap": 15.0,
+      "v": 900.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 22.0,
+      "ap": 5.0,
+      "v": 900.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 15.0,
+      "ap": 25.0,
+      "v": 900.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo57": {
+    "ST": {
+      "dmg": 8.0,
+      "ap": 15.0,
+      "v": 500.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 15.0,
+      "ap": 2.0,
+      "v": 715.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 10.0,
+      "ap": 30.0,
+      "v": 715.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo762": {
+    "FMJ": {
+      "dmg": 22.0,
+      "ap": 20.0,
+      "v": 715.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 26.0,
+      "ap": 5.0,
+      "v": 715.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 18.0,
+      "ap": 30.0,
+      "v": 715.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo338lapua": {
+    "ST": {
+      "dmg": 25.0,
+      "ap": 25.0,
+      "v": 300.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 50.0,
+      "ap": 5.0,
+      "v": 915.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 35.0,
+      "ap": 40.0,
+      "v": 915.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo762x51": {
+    "FMJ": {
+      "dmg": 30.0,
+      "ap": 25.0,
+      "v": 850.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 35.0,
+      "ap": 8.0,
+      "v": 850.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 25.0,
+      "ap": 40.0,
+      "v": 850.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo556": {
+    "FMJ": {
+      "dmg": 20.0,
+      "ap": 18.0,
+      "v": 950.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 24.0,
+      "ap": 6.0,
+      "v": 950.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 16.0,
+      "ap": 28.0,
+      "v": 950.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo357": {
+    "FMJ": {
+      "dmg": 18.0,
+      "ap": 12.0,
+      "v": 580.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 25.0,
+      "ap": 2.0,
+      "v": 580.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 15.0,
+      "ap": 20.0,
+      "v": 580.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo46": {
+    "FMJ": {
+      "dmg": 12.0,
+      "ap": 15.0,
+      "v": 735.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 15.0,
+      "ap": 3.0,
+      "v": 735.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 10.0,
+      "ap": 25.0,
+      "v": 735.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo68": {
+    "FMJ": {
+      "dmg": 24.0,
+      "ap": 20.0,
+      "v": 800.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 28.0,
+      "ap": 5.0,
+      "v": 800.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 20.0,
+      "ap": 30.0,
+      "v": 800.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo45acp": {
+    "ST": {
+      "dmg": 10.0,
+      "ap": 10.0,
+      "v": 250.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 20.0,
+      "ap": 1.0,
+      "v": 350.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 12.0,
+      "ap": 15.0,
+      "v": 350.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo50bmg": {
+    "PR": {
+      "dmg": 50.0,
+      "ap": 100.0,
+      "v": 1200.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "EX": {
+      "dmg": 45.0,
+      "ap": 20.0,
+      "v": 900.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 3,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 60.0,
+      "ap": 60.0,
+      "v": 900.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    }
+  },
+  "ammo9mm": {
+    "ST": {
+      "dmg": 8.0,
+      "ap": 12.0,
+      "v": 300.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "HP": {
+      "dmg": 18.0,
+      "ap": 2.0,
+      "v": 400.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 0,
+      "tracerColor": 0
+    },
+    "AP": {
+      "dmg": 10.0,
+      "ap": 18.0,
+      "v": 400.0,
+      "qty": 1,
+      "dis": 1.0,
+      "hitType": 1,
+      "tracerColor": 0
+    }
+  }
+}

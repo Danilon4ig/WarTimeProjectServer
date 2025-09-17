@@ -1,0 +1,18 @@
+
+#.
+#Changes and tweaks to Clockwork's blocks and items
+[clockwork]
+	#.
+	#.
+	#Range: 0.0 ~ 3.4028234663852886E38
+	encasedFanForceMultiplier = 1.0
+
+	#.
+	#Length values for strechable shafts and pipes
+	[clockwork.stretchables]
+		#.
+		#.
+		#Max stretching length for the Constant Velocity Joint
+		#Range: 0.0 ~ 10.0
+		constantVelocityJointMaxLength = 3.0
+

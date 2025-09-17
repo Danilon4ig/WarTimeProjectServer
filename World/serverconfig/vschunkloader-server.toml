@@ -1,0 +1,39 @@
+
+#General settings
+[general]
+	#Should force load all ships on the server
+	force_load_all_ships = false
+
+#Chunk loader consumptions
+[consumptions]
+	#Energy comsume rate to active chunk loader, in FE/s
+	#Range: 0 ~ 134217727
+	chunk_loader_energy_consume_rate = 81920
+	#Energy comsume rate to active weak chunk loader, in FE/s
+	#Range: 0 ~ 134217727
+	weak_chunk_loader_energy_consume_rate = 81920
+	#Max seconds weak chunk loader can active before self-destroy
+	#Range: > 0
+	weak_chunk_loader_max_activate_seconds = 180
+
+#Ammo Ship relative configs
+[ammos]
+	#Energy required to assemble an Ammo
+	#Range: 0 ~ 536870911
+	ammo_assemble_energy = 245760
+	#Reuse deleted ship's chunks to assemble new ammo when possible
+	reuse_ship_chunks = true
+	#Blocks will prevent to assemble an Ammo
+	ammo_assemble_blacklist = ["minecraft:barrier", "minecraft:bedrock"]
+	#Max blocks can be assembled with Ammo Assembler
+	#Range: > 0
+	ammo_max_blocks = 4096
+	#Ammo max activate seconds after leaves Ammo Manager
+	#Range: > 0
+	ammo_max_activate_seconds = 60
+	#Should remove Ammo after it is expired
+	remove_ammo_after_expired = true
+	#Ammo will keep fresh (keep unactivated) within the range of Ammo Manager
+	#Range: 1 ~ 512
+	ammo_manager_anchoring_range = 64
+
